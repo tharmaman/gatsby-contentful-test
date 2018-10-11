@@ -21,8 +21,9 @@ module.exports = {
       options: {
         spaceId: `y74rkxryxk97`,
         accessToken: `e15329db6c4631ea1e15c91338e20052599bb1605137959425999b54d3d74e8f`,
-      }
+      },
     },
+    `gatsby-transformer-remark`,
     'gatsby-plugin-offline',
   ],
 }

@@ -9,9 +9,9 @@ const path = require(`path`);
 // You can delete this file if you're not using it
 exports.createPages = ({
   graphql,
-  boundActionCreators,
+  actions,
 }) => {
-    const {createPage} = boundActionCreators;
+    const {createPage} = actions;
     return new Promise((resolve, reject) => {
         const blogPostTemplate = path.resolve('src/templates/blog-post.js')
         resolve(
@@ -20,7 +20,6 @@ exports.createPages = ({
                     allContentfulBlog (limit:100) {
                         edges {
                             node {
-                                id
                                 slug
                             }
                         }
