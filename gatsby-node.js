@@ -13,6 +13,7 @@ exports.createPages = ({
 }) => {
     const {createPage} = boundActionCreators;
     return new Promise((resolve, reject) => {
+        const blogPostTemplate = path.resolve('src/templates/blog-post.js')
         resolve(
             graphql(`
                 {
